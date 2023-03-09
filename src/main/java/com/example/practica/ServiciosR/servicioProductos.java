@@ -23,4 +23,19 @@ public class servicioProductos {
     public int cantidad(){
         return lista.size();
     }
+
+    public ArrayList<Productos> total(){
+        for (Productos producto:lista){
+            producto.setTotal(producto.getCantidad() * producto.getPrecio());
+        }
+        return lista;
+    }
+
+    public int totalSuma(){
+        int total = 0;
+        for(Productos totalproducto:lista){
+            total += totalproducto.getTotal();
+        }
+        return total;
+    }
 }

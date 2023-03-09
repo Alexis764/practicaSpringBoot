@@ -24,4 +24,13 @@ public class ControladorProductos {
         return servicio.cantidad();
     }
 
+    @GetMapping("/listartotal")
+    public ArrayList<Productos> total(){
+        return servicio.total();
+    }
+
+    @GetMapping("/totalproductos")
+    public int totalproductos(){
+        return servicio.totalSuma();
+    }
 }
