@@ -22,4 +22,14 @@ public class ControladorProductosAlexis {
     public int mostrarCantidadProductos() {
         return servicioProductos.cantidadProductos();
     }
+
+    @GetMapping("/totalProducto")
+    public ArrayList<ProductosAlexis> listarTotal() {
+        return servicioProductos.totalProducto();
+    }
+
+    @GetMapping("/totalFinal")
+    public double mostrarTotalFinal() {
+        return servicioProductos.totalFinal();
+    }
 }
