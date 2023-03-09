@@ -1,5 +1,6 @@
 package com.example.practica.Entidades;
 
+
 public class ProductosAlexis {
 
     //Atributos
